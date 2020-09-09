@@ -37,4 +37,4 @@ jobs:
        run: npm install -g surge
             
     - name: deploying on surge
-      run: surge ./build quizgo.surge.sh --token {de3990067368544a54e14c2a9fd948e6}
+      run: surge ./build quizgo.surge.sh --token ${secrets.QUIZ_GO}}
