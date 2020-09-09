@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+b,h1,h2{
+    color: #3f51b5;
 }
+.questionCardParent{
+    margin: 10px 30px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.question{
+    padding:5px 20px;
+    text-align: left;
+}
+.options{
+    padding: 0 30px;
+}
+.questionSubmit{
+    color: #fff;
+    border: none;
+    background: #3f51b5;
+    padding: 8px 13px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+    transition: background, 0.5s;
+}
+.questionSubmit:hover{
+    background: #162990;
+}
+/* Hide the browser's default radio button */
+input[type=radio] {
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transform: translateY(3px);
+}
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
   }
+.resultcardParent{
+    margin:0 20px ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homebutton{
+    background: #fff !important;
+    color: #000 !important;
+    transition-property: background, color !important;
+    transition-duration: 0.5s !important;
 }
-
-.App-link {
-  color: #61dafb;
+.homebutton:hover{
+    color:#fff !important;
+    background: #162990 !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiCircularProgress-root,
+.circularProgress{
+    padding: 100px 0px;
+    width: 65px !important;
+    height: 65px !important;
 }
